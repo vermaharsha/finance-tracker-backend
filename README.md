@@ -1,13 +1,19 @@
-# Personal Finance Tracker
+# Personal Finance Tracker - Backend
+
+> **Status:** Backend complete and functional. Frontend planned but not yet implemented in this repo.
 
 Welcome to the **Personal Finance Tracker** project!  
-This README will serve both as project documentation and as a detailed, step-by-step guide for building your first full-stack app from scratch.  
+This README documents the backend build and also serves as a step-by-step guide for the full-stack app - including the frontend phases, which are documented here as the intended next steps but are **not yet built**.
 
+**Tech Stack (Backend - built):**
+- Node.js, Express.js, MongoDB, JWT
 
-**Tech Stack:** 
-- Frontend: React.js, Tailwind CSS/Bootstrap, Chart.js  
-- Backend: Node.js, Express.js, MongoDB, JWT  
-- Deployment: Vercel, Render/Railway
+**Tech Stack (Frontend - planned, not yet implemented):**
+- React.js, Tailwind CSS/Bootstrap, Chart.js
+
+**Deployment:**
+- Backend: Render/Railway
+- Frontend: Vercel (planned)
 
 ---
 
@@ -15,16 +21,12 @@ This README will serve both as project documentation and as a detailed, step-by-
 
 - [Project Overview](#project-overview)
 - [Features (MVP)](#features-mvp)
-- [Phase 1: Backend Setup](#phase-1-backend-setup)
-    - [1.1. Project Initialization](#11-project-initialization)
-    - [1.2. MongoDB Atlas Setup](#12-mongodb-atlas-setup)
-    - [1.3. Express App Boilerplate](#13-express-app-boilerplate)
-    - [1.4. Folder Structure](#14-folder-structure)
-- [Phase 2: Backend - Models & Auth](#phase-2-backend---models--auth)
-- [Phase 3: Backend - Transactions CRUD](#phase-3-backend---transactions-crud)
-- [Phase 4: Frontend Setup](#phase-4-frontend-setup)
-- [Phase 5: Frontend - Auth & Dashboard](#phase-5-frontend---auth--dashboard)
-- [Phase 6: Frontend - Transactions & Charts](#phase-6-frontend---transactions--charts)
+- [Phase 1: Backend Setup](#phase-1-backend-setup) - Built
+- [Phase 2: Backend - Models & Auth](#phase-2-backend---models--auth) - Built
+- [Phase 3: Backend - Transactions CRUD](#phase-3-backend---transactions-crud) - Built
+- [Phase 4: Frontend Setup](#phase-4-frontend-setup) - Planned
+- [Phase 5: Frontend - Auth & Dashboard](#phase-5-frontend---auth--dashboard) - Planned
+- [Phase 6: Frontend - Transactions & Charts](#phase-6-frontend---transactions--charts) - Planned
 - [Phase 7: Deployment](#phase-7-deployment)
 - [Phase 8: Polish & Documentation](#phase-8-polish--documentation)
 - [Bonus: Testing, CI/CD, and More Features](#bonus-testing-cicd-and-more-features)
@@ -33,22 +35,26 @@ This README will serve both as project documentation and as a detailed, step-by-
 
 ## Project Overview
 
-**Personal Finance Tracker** helps users manage their income and expenses, categorize transactions, and visualize their financial data through interactive dashboards.
+**Personal Finance Tracker** is a backend API that lets users manage income and expenses, categorize transactions, and (eventually) visualize their financial data through a dashboard. The backend - authentication, transaction CRUD, and data modeling - is complete. The frontend was scoped and documented as part of the original learning plan but has not been built yet.
 
 ---
 
-## Features (MVP)
+## Features
 
+**Built (Backend):**
 - User registration, login, and JWT-based authentication
-- Add, view, edit, and delete transactions
+- Add, view, edit, and delete transactions via REST API
 - Categorize transactions (e.g., Food, Travel, Shopping)
+- Secure, per-user data access via JWT middleware
+
+**Planned (Frontend - not yet implemented):**
 - Dashboard with charts (total balance, by category, monthly trends)
 - Responsive UI for desktop and mobile
-- Deployed frontend and backend with clear documentation
+- Deployed, connected frontend + backend
 
 ---
 
-## Phase 1: Backend Setup
+## Phase 1: Backend Setup - Built
 
 ### 1.1. Project Initialization
 
@@ -137,7 +143,7 @@ This README will serve both as project documentation and as a detailed, step-by-
 
 ---
 
-## Phase 2: Backend - Models & Auth
+## Phase 2: Backend - Models & Auth - Built
 
 **Goal:**  
 - Create User model (name, email, hashed password)
@@ -158,7 +164,7 @@ This README will serve both as project documentation and as a detailed, step-by-
 
 ---
 
-## Phase 3: Backend - Transactions CRUD
+## Phase 3: Backend - Transactions CRUD - Built
 
 **Goal:**  
 - Create Transaction model
@@ -177,7 +183,7 @@ This README will serve both as project documentation and as a detailed, step-by-
 
 ---
 
-## Phase 4: Frontend Setup
+## Phase 4: Frontend Setup - Planned, not yet built
 
 1. Create frontend app:
     ```bash
@@ -202,7 +208,7 @@ This README will serve both as project documentation and as a detailed, step-by-
 
 ---
 
-## Phase 5: Frontend - Auth & Dashboard
+## Phase 5: Frontend - Auth & Dashboard - Planned, not yet built
 
 **Goal:**  
 - Build Signup, Login, and Logout pages
@@ -211,7 +217,7 @@ This README will serve both as project documentation and as a detailed, step-by-
 
 ---
 
-## Phase 6: Frontend - Transactions & Charts
+## Phase 6: Frontend - Transactions & Charts - Planned, not yet built
 
 **Goal:**  
 - Fetch and display transactions
@@ -223,12 +229,14 @@ This README will serve both as project documentation and as a detailed, step-by-
 
 ## Phase 7: Deployment
 
-1. Deploy backend to Render or Railway  
-   - Set environment variables (MONGODB_URI, JWT_SECRET)  
-   - Update CORS in backend
+**Backend - done:**
+- Deployed to Render/Railway
+- Environment variables configured (MONGODB_URI, JWT_SECRET)
+- CORS configured
 
-2. Deploy frontend to Vercel or Netlify  
-   - Update API URLs in your frontend
+**Frontend - planned:**
+- Deploy to Vercel or Netlify
+- Connect to backend API
 
 ---
 
@@ -261,6 +269,6 @@ This README will serve both as project documentation and as a detailed, step-by-
 
 ---
 
-## 🙋‍♀️ Author
+## Author
 
-Made with ❤️ by [Harsha Verma](https://github.com/vermaharsha)
+Made by [Harsha Verma](https://github.com/vermaharsha)
